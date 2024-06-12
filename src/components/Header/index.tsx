@@ -37,7 +37,7 @@ export const Header = () => {
 
       <div className={'flex flex-col items-center'}>
         <div className={'max-w-['+maxWidth+'px] w-full'}>
-          <div className="flex w-full ">
+          <div className="flex w-full py-1">
 
             <div className="flex flex-col w-1/5 items-start">
               <img src={image} alt='image' className='w-full max-w-[150px]'/> 
@@ -52,7 +52,7 @@ export const Header = () => {
             </div>
 
             <div className="flex flex-col w-1/5 justify-center items-end">
-              <Button/>
+              <Button fontSize='sm'/>
             </div>
 
           </div>
