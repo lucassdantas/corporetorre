@@ -13,7 +13,7 @@ export const Header = () => {
 
       <div className={'flex flex-col items-center w-full shadow-sm border-b-2'}>
         <div className={'max-w-['+maxWidth+'px] w-full'}>
-          <div className="flex w-full justify-between py-1 text-sm items-center">
+          <div className="flex w-full justify-between text-sm items-center">
 
             <div className="flex flex-col">
               <ul className='flex gap-4 ' >
@@ -37,9 +37,9 @@ export const Header = () => {
 
       <div className={'flex flex-col items-center'}>
         <div className={'max-w-['+maxWidth+'px] w-full'}>
-          <div className="flex w-full py-1">
+          <div className="flex w-full ">
 
-            <div className="flex flex-col w-1/5 items-center">
+            <div className="flex flex-col w-1/5 items-start">
               <img src={image} alt='image' className='w-full max-w-[150px]'/> 
             </div>
 
@@ -51,7 +51,7 @@ export const Header = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col w-1/5 justify-center items-center">
+            <div className="flex flex-col w-1/5 justify-center items-end">
               <Button/>
             </div>
 
