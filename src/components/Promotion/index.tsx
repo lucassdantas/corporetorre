@@ -6,7 +6,7 @@ export const Promotion = () => {
   const promotionMonth = 'Junho'
   return (
     <WidthLimiter>
-      <div className="flex w-full justify-between text-sm items-center h-[90vh] max-h-[670px] text-gray-800">
+      <div className="flex w-full justify-between text-sm items-center py-12 text-gray-800">
           <div className="flex flex-col py-4 w-1/2">
             <h2 className='text-4xl font-bold'>Promoção do Mês: {promotionMonth}</h2>
             <p className='whitespace-pre-wrap my-12 text-base'>
@@ -17,7 +17,7 @@ Neste mês, estaremos oferecendo descontos especiais em todos os nossos serviço
             <Button/>
           </div>
           <div className="flex flex-col py-4 w-1/2 items-center ">
-            <video controls className='h-[512px]'>
+            <video controls className='h-[612px]'>
               <source src={promotionVideo} type='video/mp4'/>
             </video>
           </div>
