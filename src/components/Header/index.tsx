@@ -1,18 +1,61 @@
-import React from 'react'
 import { maxWidth } from '../../utils/max-width'
+import image from '../../assets/logo-corpore.png'
+import { Button } from '../common/Button'
+import {address, email, socialMedia, phoneNumber} from '../../utils/contact-info'
+import { CiFacebook, CiMail  } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { LuMapPin } from "react-icons/lu";
+
 export const Header = () => {
   return (
     <header>
-      <div className={`max-w-${maxWidth}`}>
-        
-        <div className="flex">
-          <div className="flex flex-col"></div>
-          <div className="flex flex-col"></div>
-        </div>
 
-        <div className="flex">
-          <div className="flex flex-col"></div>
-          <div className="flex flex-col"></div>
+      <div className={'flex flex-col items-center w-full shadow-sm border-b-2'}>
+        <div className={'max-w-['+maxWidth+'px] w-full'}>
+          <div className="flex w-full justify-between py-1 text-sm items-center">
+
+            <div className="flex flex-col">
+              <ul className='flex gap-4 ' >
+                <li><a href={email.url} target='_blank' className='flex gap-2 items-center'><CiMail />{email.info}</a></li>
+                <li><a href={phoneNumber.whatsApp.url} target='_blank' className='flex gap-2 items-center'><IoLogoWhatsapp />{phoneNumber.whatsApp.info}</a></li>
+                <li><a href={address.url} target='_blank' className='flex gap-2 items-center'><LuMapPin />Av. Dom Hélder Câmara, 5200 – salas 512/513 – Cachambi</a></li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col justify-center items-center align-middle py-4 ">
+              <ul className='flex gap-2'>
+                <li><a href={socialMedia.facebook.url}><CiFacebook   className='text-xl' /></a></li>
+                <li><a href={socialMedia.instagram.url}><FaInstagram className='text-xl'/></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div className={'flex flex-col items-center'}>
+        <div className={'max-w-['+maxWidth+'px] w-full'}>
+          <div className="flex w-full py-1">
+
+            <div className="flex flex-col w-1/5 items-center">
+              <img src={image} alt='image' className='w-full max-w-[150px]'/> 
+            </div>
+
+            <div className="flex flex-col w-3/5 justify-center items-center">
+              <ul className='flex gap-4'>
+                <li><a href='#servicos'>Serviços</a></li>
+                <li><a href='#sobre'>Sobre nós</a></li>
+                <li><a href='#contato'>Fale conosco</a></li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col w-1/5 justify-center items-center">
+              <Button/>
+            </div>
+
+          </div>
         </div>
       </div>
     </header>
