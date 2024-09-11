@@ -81,7 +81,7 @@ Benefícios da Baropodometria:
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-4 justify-between">
+      <div className="flex flex-wrap gap-4 justify-start">
         {servicesContent.map((service:ServiceType, i) => <ServiceCard key={i} media={service.media} name={service.name} description={service.description} className='lg:w-[30%] w-[48%]'/>)}
       </div>
     </Section>
