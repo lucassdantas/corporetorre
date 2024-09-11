@@ -8,6 +8,7 @@ import { Services } from '@/components/Sections/Services'
 import { Infos } from '@/components/Sections/Infos'
 import { Testimonials } from '@/components/Sections/Testimonials'
 import { Contact } from '@/components/Sections/Contact'
+import { FloatButton } from '@/components/FloatButton'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Infos/>
       <Testimonials/>
       <Contact/>
+      <FloatButton/>
     </main>
     <Footer/>
   </>

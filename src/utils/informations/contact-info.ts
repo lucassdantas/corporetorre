@@ -13,19 +13,20 @@ export const address:ContactInfo = {
 }
 
 export const phoneNumber:ContactInfoMap = {
-    phone01:{
-        info:'(21) 3439-1514',
-        url:'tel:+552134391514'
-    },
-    phone02:{
-        info:'(21) 4106-6191',
-        url:'tel:+552141066191'
-    },
-    whatsApp:{
-        info:'(21) 98189-7315',
-        url:'https://api.whatsapp.com/send/?phone=5521981897315&text&type=phone_number&app_absent=0'
-    }
+  phone01:{
+      info:'(21) 3439-1514',
+      url:'tel:+552134391514'
+  },
+  phone02:{
+      info:'(21) 4106-6191',
+      url:'tel:+552141066191'
+  },
 }
+export const whatsApp:ContactInfo = {
+  info:'(21) 98189-7315',
+  url:'https://api.whatsapp.com/send/?phone=5521981897315&text&type=phone_number&app_absent=0'
+}
+
 
 export const socialMedia:ContactInfoMap = {
     facebook:{

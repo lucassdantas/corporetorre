@@ -3,12 +3,13 @@ import React, { ReactNode } from 'react'
 
 type SectionProps = {
   children:ReactNode, 
-  className?:string
+  className?:string,
+  limiterClassname?:string,
 }
-export const Section = ({children, className=''}:SectionProps) => {
+export const Section = ({children, className='', limiterClassname=''}:SectionProps) => {
   return (
   <section className={`${className}`}>
-    <Limiter>
+    <Limiter className={limiterClassname}>
       {children}
     </Limiter>
   </section>

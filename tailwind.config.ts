@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "green-wpp":'#25D366',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

@@ -33,7 +33,7 @@ export const Infos = () => {
 
   return (
     <Section className='bg-blue-400'>
-      <div className="flex" ref={sectionRef}>
+      <div className="flex text-white" ref={sectionRef}>
         <div className='w-1/3 flex flex-col items-center justify-center'>
           <span>+{isVisible && <CountUp end={52000} duration={3} separator="." />}</span>
           <span>pacientes atendidos</span>
