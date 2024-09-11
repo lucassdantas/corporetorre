@@ -1,5 +1,5 @@
 import { IoLogoWhatsapp } from "react-icons/io5";
-import {phoneNumber} from '../../../utils/contact-info'
+import {phoneNumber} from '../../../utils/informations/contact-info'
 
 type ButtonProps = {
   content?:string; 

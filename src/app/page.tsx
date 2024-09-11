@@ -5,6 +5,9 @@ import { Header } from '@/components/Header'
 import { Promotion } from '@/components/Sections/Promotion'
 import { SubBanner } from '@/components/Sections/SubBanner'
 import { Services } from '@/components/Sections/Services'
+import { Infos } from '@/components/Sections/Infos'
+import { Testimonials } from '@/components/Sections/Testimonials'
+import { Contact } from '@/components/Sections/Contact'
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
       <Promotion/>
       <About/>
       <Services/>
+      <Infos/>
+      <Testimonials/>
+      <Contact/>
     </main>
     <Footer/>
   </>

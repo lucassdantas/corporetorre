@@ -1,7 +1,7 @@
 import { maxWidth } from '@/utils/max-width'
 import image from '@/assets/logo-corpore.png'
 import { Button } from '@/components/common/Button'
-import {address, email, socialMedia, phoneNumber} from '@/utils/contact-info'
+import {address, email, socialMedia, phoneNumber} from '@/utils/informations/contact-info'
 import { CiFacebook, CiMail  } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
