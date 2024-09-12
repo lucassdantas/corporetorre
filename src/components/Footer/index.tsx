@@ -34,7 +34,7 @@ export const Footer = () => {
               <li className='flex gap-4 items-center'><FaMapMarkerAlt className='text-2xl' /><a href={address.url} target='_blank'>{address.info}</a></li>
               <li className='flex gap-4 items-center'><BiPhone/><a href={phoneNumber.phone01.url} target='_blank'>{phoneNumber.phone01.info}</a></li>
               <li className='flex gap-4 items-center'><FaWhatsapp/> <a href={whatsApp.url} target='_blank'>{whatsApp.info}</a></li>
-              <li className='flex gap-4 items-center'><a href={whatsApp.url}>Política de privacidade</a></li>
+              <li className='flex gap-4 items-center'><Link href={'/politica-de-privacidade'}>Política de privacidade</Link></li>
             </ul>
           </div>
         </div>
