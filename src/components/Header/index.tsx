@@ -1,21 +1,16 @@
 import { maxWidth } from '@/utils/max-width'
 import image from '@/assets/logo-corpore.png'
 import { Button } from '@/components/common/Button'
-import {address, email, socialMedia, whatsApp} from '@/utils/informations/contact-info'
-import { CiFacebook, CiMail  } from "react-icons/ci";
-import { FaInstagram } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io5";
-import { LuMapPin } from "react-icons/lu";
 import { Limiter } from '@/components/Limiter';
 import Image from 'next/image';
 import Link from 'next/link';
-import { SuperHeader } from '@/components/Header/superHeader';
+import { SuperHeader } from '@/components/Header/SuperHeader';
 
 export const Header = () => {
   return (
     <header >
+      <SuperHeader/>
       <Limiter>
-        <SuperHeader/>
         <div className={'flex  items-center'}>
           <div className="flex flex-col w-1/5 items-start">
             <Link href='/'>
