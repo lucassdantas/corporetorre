@@ -43,3 +43,9 @@ export const email:ContactInfo = {
     info:'contato@corporetorre.com.br',
     url:'mailto:contato@corporetorre.com.br'
 }
+
+export const workingTime = {
+  weekDays:'Seg - Sex: 07:30 - 22:00',
+  saturday:'Sábado: 08:00-12:00 ',
+  sunday:'Domingo: Fechado'
+}

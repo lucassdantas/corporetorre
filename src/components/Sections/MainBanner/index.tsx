@@ -3,7 +3,7 @@ import { Button } from '@/components/common/Button'
 import quiropraxiaImg from '@/assets/quiropraxia-profissional-em-paciente.jpg'
 import { Section } from '@/components/Section'
 import Image from 'next/image'
-export const Banner = () => {
+export const MainBanner = () => {
   return (
     <Section className={'flex flex-col items-center w-full bg-blue-300'}>
       <div className={'max-w-['+maxWidth+'px] w-full'}>
