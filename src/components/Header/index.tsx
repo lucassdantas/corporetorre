@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header >
       <SuperHeader/>
-      <Limiter>
+      <Limiter className='py-2'>
         <div className={'flex  items-center'}>
           <div className="flex flex-col w-1/5 items-start">
             <Link href='/'>
@@ -18,11 +18,11 @@ export const Header = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col w-3/5 justify-center items-center">
-            <ul className='flex gap-4 text-black'>
-              <li><a href='#servicos'>Serviços</a></li>
-              <li><a href='#sobre'>Sobre nós</a></li>
-              <li><a href='#contato'>Fale conosco</a></li>
+          <div className="flex flex-col w-3/5 justify-center items-center font-bold">
+            <ul className='flex gap-4 text-black text-xl'>
+              <li className='hover:scale-110 transition duration-300'><a href='#servicos'>Serviços</a></li>
+              <li className='hover:scale-110 transition duration-300'><a href='#sobre'>Sobre nós</a></li>
+              <li className='hover:scale-110 transition duration-300'><a href='#contato'>Fale conosco</a></li>
             </ul>
           </div>
 
