@@ -10,7 +10,8 @@ export const Contact = () => {
     <Section className='bg-gray-200 py-24'>
       <div className='flex rounded-xl gap-8'>
         <div className='w-1/2 flex flex-col bg-white rounded-xl shadow-md  p-6'>
-          <Title className='mb-4'>Fale conosco</Title>
+          <Title className=''>Fale conosco</Title>
+          <p className='mb-4'>Envie-nos uma mensagem, responderemos o quanto antes</p>
           <ContactForm/>
         </div>  
         <div className='w-1/2 flex flex-col justify-center p-6 '>
