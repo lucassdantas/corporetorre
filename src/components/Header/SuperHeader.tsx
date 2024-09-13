@@ -9,8 +9,8 @@ import { LuMapPin } from 'react-icons/lu'
 
 export const SuperHeader = () => {
   return (
-    <div className='bg-gray-200'>
-      <Limiter>
+    <div className='bg-gray-200 hidden lg:block'>
+      <Limiter className='px-0 lg:px-4'>
         <div className={'flex items-center justify-between w-full shadow-sm '}>
           <div className="flex flex-col">
             <ul className='flex gap-8 text-black' >
