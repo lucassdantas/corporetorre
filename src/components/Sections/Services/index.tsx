@@ -6,9 +6,9 @@ import { servicesContent } from '@/utils/servicesContent';
 
 export const Services = () => {
   return (
-    <Section className='bg-gray-100'>
-      <div className="flex w-full justify-center items-center py-12 text-gray-800">
-        <div className="flex flex-col py-4 w-full items-center">
+    <Section className='bg-gray-100 py-12'>
+      <div className="flex w-full justify-center items-center mb-4 text-gray-800">
+        <div className="flex flex-col py-4 w-full items-center text-center">
           <SuperTitle className='text-dark-blue-corpore'>Nossos serviços</SuperTitle>
           <h2 className='text-4xl font-bold'>Confira nossas especialidades</h2>
           <p className='text-base'>A Corpore possui especialistas em diversas áreas além da Quiropraxia.</p>
@@ -16,7 +16,7 @@ export const Services = () => {
       </div>
 
       <div className="flex flex-wrap gap-4 justify-start">
-        {servicesContent.map((service:ServiceType, i) => <ServiceCard key={i} media={service.media} name={service.name} mediaUrl={service.mediaUrl} isMediaVideo={service.mediaIsVideo? service.mediaIsVideo: false} description={service.description} className='lg:w-[30%] w-[48%]'/>)}
+        {servicesContent.map((service:ServiceType, i) => <ServiceCard key={i} media={service.media} name={service.name} mediaUrl={service.mediaUrl} isMediaVideo={service.mediaIsVideo? service.mediaIsVideo: false} description={service.description} className='lg:w-[30%] sm:w-[48%] w-full'/>)}
       </div>
     </Section>
   )
