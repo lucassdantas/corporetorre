@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { SuperHeader } from '@/components/Header/SuperHeader';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Importando ícones para o menu
+import { MobileMenu } from '@/components/Header/MobileMenu';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,22 +47,7 @@ export const Header = () => {
             </ul>
           </div>
 
-          <div className={`fixed top-0 left-0 w-full bg-white shadow-lg transition-transform transform ${isMenuOpen ? 'translate-y-[90px]' : '-translate-y-full'} md:hidden`}>
-           
-            <div className="flex flex-col items-center justify-center h-full">
-              <ul className="flex flex-col gap-4 text-black text-xl">
-                <li className="hover:scale-110 transition duration-300">
-                  <a href="#sobre" onClick={toggleMenu}>Sobre nós</a>
-                </li>
-                <li className="hover:scale-110 transition duration-300">
-                  <a href="#servicos" onClick={toggleMenu}>Serviços</a>
-                </li>
-                <li className="hover:scale-110 transition duration-300">
-                  <a href="#contato" onClick={toggleMenu}>Fale conosco</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <MobileMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 
           <div className="hidden lg:flex items-center w-full md:w-1/5 justify-center md:justify-end">
             <Button fontSize="sm" />
