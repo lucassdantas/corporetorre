@@ -1,12 +1,12 @@
 import { ServiceType } from "@/types/ServiceType";
-import rpgImg from '@/assets/rpg.jpg'
-import chiropraticImg from '@/assets/quiropraxia-profissional-em-paciente.jpg'
-import phisiotherapyImg from '@/assets/fisioterapia.jpg'
-import acupunctureImg from '@/assets/acupuntura.jpg'
-import posturologyAvaliationImg from '@/assets/avaliacao-postural.jpg'
-import manualTherapy from '@/assets/fisioterapia-manual.jpg'
+import rpgImg from '@/assets/servicesMedia/rpg.jpg'
+import chiropraticImg from '@/assets/servicesMedia/quiropraxia-profissional-em-paciente.jpg'
+import phisiotherapyImg from '@/assets/servicesMedia/fisioterapia.jpg'
+import acupunctureImg from '@/assets/servicesMedia/acupuntura.jpg'
+import posturologyAvaliationImg from '@/assets/servicesMedia/avaliacao-postural.jpg'
+import manualTherapy from '@/assets/servicesMedia/fisioterapia-manual.jpg'
+import insolesImg from '@/assets/servicesMedia/confeccao-de-palmilhas.jpg'
 const baropodometryVideoUrl:string = '/videos/Baropodometria.mp4'
-import insolesImg from '@/assets/confeccao-de-palmilhas.jpg'
 
 export const servicesContent:ServiceType[]= [
   {

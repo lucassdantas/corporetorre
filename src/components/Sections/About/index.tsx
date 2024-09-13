@@ -1,9 +1,9 @@
 import { Button } from '@/components/common/Button'
 import { Section } from '@/components/Section'
 import { SuperTitle } from '@/components/SuperTitle'
-import quiropraxiaImg from '@/assets/quiropraxia-profissional-em-paciente.jpg'
 import Image from 'next/image'
 import { Title } from '@/components/Title'
+import quiropraxiaImg from '@/assets/pessoa-com-dor-nas-costas-corporetorre.jpg'
 
 export const About = () => {
   return (
