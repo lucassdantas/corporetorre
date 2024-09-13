@@ -1,6 +1,7 @@
 import { ServiceType } from '@/types/ServiceType';
 import { Section } from '@/components/Section'
 import { ServiceCard } from '@/components/ServiceCard';
+import { SuperTitle } from '@/components/SuperTitle';
 
 export const Services = () => {
     const servicesContent:ServiceType[]= [
@@ -74,10 +75,11 @@ Benefícios da Baropodometria:
     ]
     return (
     <Section className='bg-gray-100'>
-      <div className="flex w-full justify-between text-sm items-center py-12 text-gray-800">
-        <div className="flex flex-col py-4 w-full">
-          <h2 className='text-4xl font-bold'>Nossos serviços</h2>
-          <p className='whitespace-pre-wrap my-12 text-base'>A Corpore possui especialistas em diversas áreas além da Quiropraxia.</p>
+      <div className="flex w-full justify-center items-center py-12 text-gray-800">
+        <div className="flex flex-col py-4 w-full items-center">
+          <SuperTitle className='text-dark-blue-corpore'>Nossos serviços</SuperTitle>
+          <h2 className='text-4xl font-bold'>Confira nossas especialidades</h2>
+          <p className='text-base'>A Corpore possui especialistas em diversas áreas além da Quiropraxia.</p>
         </div>
       </div>
 

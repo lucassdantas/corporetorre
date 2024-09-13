@@ -9,7 +9,7 @@ export const About = () => {
     <Section>
       <div className="flex items-center gap-8 text-gray-800 py-24">
         <div className="flex flex-col items-center lg:items-start py-4 w-1/2">
-          <SuperTitle className='text-blue-corpore'>Sobre nós</SuperTitle>
+          <SuperTitle className='text-dark-blue-corpore'>Sobre nós</SuperTitle>
           <h2 className='text-4xl font-bold mb-7'>Te auxiliamos no alívio da dor</h2>
           <p className='whitespace-pre-wrap mb-4 text-base'>Bem-vindo à Corpore, uma clínica especializada no cuidado e bem-estar do seu corpo. </p>
           <p className='mb-4'>Nossa missão é proporcionar alívio para dores e desconfortos, ajudando você a retomar suas atividades diárias com mais qualidade de vida. </p>
