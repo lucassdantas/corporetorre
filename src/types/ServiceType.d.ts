@@ -1,5 +1,9 @@
+import { StaticImageData } from "next/image";
+
 export interface ServiceType{
-  media:string;
+  media?: StaticImageData;
+  mediaUrl?:string;
+  mediaIsVideo?:boolean;
   name:string;
   description:string;
 }
