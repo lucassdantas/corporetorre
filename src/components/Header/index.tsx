@@ -36,13 +36,13 @@ export const Header = () => {
           <div className="hidden w-2/3 md:flex flex-grow items-center md:justify-center justify-end font-bold">
             <ul className="flex gap-4 text-black text-xl">
               <li className="hover:scale-110 transition duration-300">
-                <a href="#sobre">Sobre nós</a>
+                <a href={`${location.origin}/#sobre`}>Sobre nós</a>
               </li>
               <li className="hover:scale-110 transition duration-300">
-                <a href="#servicos">Serviços</a>
+                <a href={`${location.origin}/#servicos`}>Serviços</a>
               </li>
               <li className="hover:scale-110 transition duration-300">
-                <a href="#contato">Fale conosco</a>
+                <a href={`${location.origin}/#contato`}>Fale conosco</a>
               </li>
             </ul>
           </div>
