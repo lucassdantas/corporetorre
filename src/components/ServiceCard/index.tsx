@@ -13,8 +13,8 @@ export const ServiceCard = ({media, name, description, isMediaVideo, mediaUrl, c
       <div>
         {!isMediaVideo && media    && <Image src={media} alt={`Serviço de ${name}`} className='rounded-lg h-[284px] object-cover w-full'/>}
         {isMediaVideo  && mediaUrl &&  <video controls className="w-full h-[284px] object-cover rounded-lg mb-6 shadow-lg"><source src={mediaUrl} type="video/mp4" ></source></video>}
-        <h3 className='font-bold text-xl my-4'>{name}</h3>
-        <p>{description}</p>
+        <h3 className='font-bold lg:text-start text-center text-xl my-4'>{name}</h3>
+        <p className='lg:text-start text-center'>{description}</p>
       </div>
       <Button/>
     </div>

@@ -12,7 +12,7 @@ export const Testimonials = () => {
       <Title className='mb-12'>A opinião dos nossos clientes</Title>
       <Carousel>
         {testimonials.map((testimonial, i) => (
-          <div key={i} className='italic min-h-[112px] flex flex-col justify-center'>
+          <div key={i} className='italic lg:min-h-[112px] min-h-[350px] flex flex-col justify-center'>
             <p className='text-lg'>{testimonial.content}</p>
           </div>
         ))}

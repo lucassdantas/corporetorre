@@ -8,8 +8,8 @@ export const Promotion = () => {
     <Section>
       <div className="flex flex-col items-center w-full py-12 text-gray-800 gap-6">
         <Title className='text-center'>Promoção do Mês: {promotionMonth}</Title>
-        <div className="w-full max-w-[350px] bg-white">
-          <video controls className="w-full h-auto rounded-lg mb-6 shadow-lg">
+        <div className="w-full max-w-[350px] h-fit bg-white">
+          <video controls className="w-full h-full object-cover rounded-lg mb-6 shadow-lg">
             <source src={`/videos/promocao-junho.mp4`} type="video/mp4" />
           </video>
           <Button />

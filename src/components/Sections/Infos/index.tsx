@@ -33,16 +33,16 @@ export const Infos = () => {
 
   return (
     <Section className='bg-dark-blue-corpore'>
-      <div className="flex text-white py-12" ref={sectionRef}>
-        <div className='w-1/3 flex flex-col text-center items-center justify-center'>
+      <div className="flex lg:flex-row flex-col items-center text-white py-12 lg:gap-0 gap-8" ref={sectionRef}>
+        <div className='w-full lg:w-1/3 flex flex-col text-center items-center justify-center'>
           <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={52000} duration={3} separator="." />}</span>
           <span className='text-lg'>pacientes atendidos</span>
         </div>
-        <div className='w-1/3 flex flex-col text-center items-center justify-center'>
+        <div className='w-full lg:w-1/3 flex flex-col text-center items-center justify-center'>
           <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={15} duration={4} />}</span>
           <span className='text-lg'>Anos de experiência</span>
         </div>
-        <div className='w-1/3 flex flex-col text-center items-center justify-center'>
+        <div className='w-full lg:w-1/3 flex flex-col text-center items-center justify-center'>
           <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={15} duration={5} />}</span>
           <span className='text-lg'>especialistas</span>
         </div>

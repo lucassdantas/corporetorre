@@ -7,7 +7,7 @@ import personRelaxing from '@/assets/pessoa-relaxando-corporetorre.jpg'
 
 export const Contact = () => {
   return (
-    <Section className='bg-gray-200 py-24'>
+    <Section className='bg-gray-200 py-24' id='contato'>
       <div className='flex rounded-xl gap-8'>
         <div className='w-1/2 flex flex-col bg-white rounded-xl shadow-md  p-6'>
           <Title className=''>Fale conosco</Title>
