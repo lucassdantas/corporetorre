@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "green-wpp":'#25D366',
-        "blue-corpore":'#1c90ca',
+        "blue-corpore":'#6fbfe2',
         "light-blue-corpore":'#96bed1',
         "dark-blue-corpore":'#2a547a',
         background: "var(--background)",
