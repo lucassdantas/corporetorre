@@ -32,19 +32,19 @@ export const Infos = () => {
   }, [])
 
   return (
-    <Section className='bg-blue-400'>
-      <div className="flex text-white" ref={sectionRef}>
-        <div className='w-1/3 flex flex-col items-center justify-center'>
-          <span>+{isVisible && <CountUp end={52000} duration={3} separator="." />}</span>
-          <span>pacientes atendidos</span>
+    <Section className='bg-dark-blue-corpore'>
+      <div className="flex text-white py-12" ref={sectionRef}>
+        <div className='w-1/3 flex flex-col text-center items-center justify-center'>
+          <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={52000} duration={3} separator="." />}</span>
+          <span className='text-lg'>pacientes atendidos</span>
         </div>
-        <div className='w-1/3 flex flex-col items-center justify-center'>
-          <span>+{isVisible && <CountUp end={15} duration={4} />}</span>
-          <span>Anos de experiência</span>
+        <div className='w-1/3 flex flex-col text-center items-center justify-center'>
+          <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={15} duration={4} />}</span>
+          <span className='text-lg'>Anos de experiência</span>
         </div>
-        <div className='w-1/3 flex flex-col items-center justify-center'>
-          <span>+{isVisible && <CountUp end={15} duration={5} />}</span>
-          <span>especialistas</span>
+        <div className='w-1/3 flex flex-col text-center items-center justify-center'>
+          <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={15} duration={5} />}</span>
+          <span className='text-lg'>especialistas</span>
         </div>
       </div>
     </Section>
