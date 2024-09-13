@@ -3,6 +3,7 @@ import { Section } from '@/components/Section'
 import { SuperTitle } from '@/components/SuperTitle'
 import quiropraxiaImg from '@/assets/quiropraxia-profissional-em-paciente.jpg'
 import Image from 'next/image'
+import { Title } from '@/components/Title'
 
 export const About = () => {
   return (
@@ -10,7 +11,7 @@ export const About = () => {
       <div className="flex items-center gap-8 text-gray-800 py-24">
         <div className="flex flex-col items-center lg:items-start py-4 w-1/2">
           <SuperTitle className='text-dark-blue-corpore'>Sobre nós</SuperTitle>
-          <h2 className='text-4xl font-bold mb-7'>Te auxiliamos no alívio da dor</h2>
+          <Title className='mb-6'>Te auxiliamos no alívio da dor</Title>
           <p className='whitespace-pre-wrap mb-4 text-base'>Bem-vindo à Corpore, uma clínica especializada no cuidado e bem-estar do seu corpo. </p>
           <p className='mb-4'>Nossa missão é proporcionar alívio para dores e desconfortos, ajudando você a retomar suas atividades diárias com mais qualidade de vida. </p>
           <p className='mb-4'>Focamos em tratamentos de quiropraxia, oferecendo abordagens personalizadas para corrigir desalinhamentos na coluna e melhorar a postura, aliviando dores crônicas e prevenindo futuras complicações.</p>
