@@ -1,14 +1,8 @@
 'use client';
 
 import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
-
-interface InputData {
-  name: string;
-  phone: string;
-  email: string;
-  message: string;
-}
+import { InputData } from '@/types/InputDataType';
+import { sendEmailjs } from '@/utils/functions/sendEmailjs';
 
 export const ContactForm = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -38,25 +32,7 @@ export const ContactForm = () => {
       message: inputData.message,
     };
 
-    if (form.current) {
-      emailjs
-        .send(
-          process.env.EMAILJS_SERVICE_ID!,   
-          process.env.EMAILJS_TEMPLATE_ID!,   
-          templateParams,
-          process.env.EMAILJS_USER_KEY!  
-        )
-        .then(
-          (result) => {
-            console.log('Success:', result.text);
-            alert('Mensagem enviada com sucesso!');
-          },
-          (error) => {
-            console.error('Error:', error.text);
-            alert('Ocorreu um erro. Tente novamente.');
-          }
-        );
-    }
+    if (templateParams) sendEmailjs(templateParams)
   };
 
   return (
