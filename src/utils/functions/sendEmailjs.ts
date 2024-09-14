@@ -2,7 +2,6 @@ import { InputData } from '@/types/InputDataType';
 import emailjs from '@emailjs/browser';
 
 export const sendEmailjs = ({name, phone, email, message}:InputData) => {
-  console.log(process.env.EMAILJS_SERVICE_ID)
   emailjs
   .send(
     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,   
