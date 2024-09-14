@@ -35,7 +35,7 @@ export const Footer = () => {
             <h4 className='text-2xl font-bold'>Contatos</h4>
             <ul className='w-full max-w-[325px]'>
               <li className='flex gap-4 items-center hover:scale-110 transition '><FaMapMarkerAlt  /><a href={address.url} target='_blank' className='leading-4'>{address.info}</a></li>
-              <li className='flex gap-4 items-center hover:scale-110 transition '><BiPhone/><a href={phoneNumber.phone01.url} target='_blank'>{phoneNumber.phone02.info}</a></li>
+              <li className='flex gap-4 items-center hover:scale-110 transition '><BiPhone/><a href={phoneNumber.phone02.url} target='_blank'>{phoneNumber.phone02.info}</a></li>
               <li className='flex gap-4 items-center hover:scale-110 transition '><BiPhone/><a href={phoneNumber.phone01.url} target='_blank'>{phoneNumber.phone01.info}</a></li>
               <li className='flex gap-4 items-center hover:scale-110 transition '><FaWhatsapp/> <a href={whatsApp.url} target='_blank'>{whatsApp.info}</a></li>
             </ul>
