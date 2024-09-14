@@ -1,9 +1,35 @@
-import { Section } from '@/components/Section';
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'your_service_id',    // Substitua pelo seu service ID
+          'your_template_id',   // Substitua pelo seu template ID
+          form.current,
+          'your_user_id'        // Substitua pelo seu user ID
+        )
+        .then(
+          (result) => {
+            console.log('Success:', result.text);
+            alert('Mensagem enviada com sucesso!');
+          },
+          (error) => {
+            console.error('Error:', error.text);
+            alert('Ocorreu um erro. Tente novamente.');
+          }
+        );
+    }
+  };
+
   return (
-    <form className="space-y-4 rounded-xl w-full">
+    <form ref={form} onSubmit={sendEmail} className="space-y-4 rounded-xl w-full">
       <div>
         <label htmlFor='name' className="block text-gray-700 font-semibold mb-1">Nome</label>
         <input 

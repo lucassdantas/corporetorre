@@ -22,7 +22,7 @@ export default function Home() {
       <Services/>
       <Infos/>
       <Testimonials/>
-      <Contact/>
+      {/* <Contact/> */}
       <FloatButton/>
     </main>
     <Footer/>
