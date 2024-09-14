@@ -15,7 +15,7 @@ export const Services = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-8 justify-center">
+      <div className="flex flex-wrap gap-8 lg:justify-start justify-center">
         {servicesContent.map((service:ServiceType, i) => <ServiceCard key={i} media={service.media} name={service.name} mediaUrl={service.mediaUrl} isMediaVideo={service.mediaIsVideo? service.mediaIsVideo: false} description={service.description} className='lg:w-[30%] sm:w-[40%] w-full'/>)}
       </div>
     </Section>
