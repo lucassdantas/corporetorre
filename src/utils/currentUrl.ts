@@ -1,1 +1,1 @@
-export const currentUrl = 'localhost:3000'
+export const currentUrl = 'http://localhost:3000'
