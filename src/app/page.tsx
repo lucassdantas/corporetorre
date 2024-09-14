@@ -12,8 +12,8 @@ import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
-    <>
-    <Header/>
+  <>
+    <Header isHomepage={true}/>
     <main className='overflow-x-hidden'>
       <MainBanner/>
       <SubBanner/>

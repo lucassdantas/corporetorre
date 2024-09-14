@@ -8,12 +8,12 @@ import Link from 'next/link';
 import { SuperHeader } from '@/components/Header/SuperHeader';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Importando ícones para o menu
 import { MobileMenu } from '@/components/Header/MobileMenu';
+import { currentUrl } from '@/utils/currentUrl';
 
-export const Header = () => {
+export const Header = ({isHomepage=false}:{isHomepage?:boolean}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+  const navUrl = isHomepage? '':`${currentUrl}`  
   return (
     <header className="bg-white shadow-md">
       <SuperHeader />
@@ -36,13 +36,13 @@ export const Header = () => {
           <div className="hidden w-2/3 md:flex flex-grow items-center md:justify-center justify-end font-bold">
             <ul className="flex gap-4 text-black text-xl">
               <li className="hover:scale-110 transition duration-300">
-                <a href={`${location.origin}/#sobre`}>Sobre nós</a>
+                <Link href={`${navUrl}/#sobre`}>Sobre nós</Link>
               </li>
               <li className="hover:scale-110 transition duration-300">
-                <a href={`${location.origin}/#servicos`}>Serviços</a>
+                <Link href={`${navUrl}/#servicos`}>Serviços</Link>
               </li>
               <li className="hover:scale-110 transition duration-300">
-                <a href={`${location.origin}/#contato`}>Fale conosco</a>
+                <Link href={`${navUrl}/#contato`}>Fale conosco</Link>
               </li>
             </ul>
           </div>
