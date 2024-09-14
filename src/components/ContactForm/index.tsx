@@ -6,14 +6,13 @@ export const ContactForm = () => {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-
     if (form.current) {
       emailjs
         .sendForm(
-          'your_service_id',    // Substitua pelo seu service ID
-          'your_template_id',   // Substitua pelo seu template ID
+          process.env.EMAILJS_SERVICE_ID!,    // Substitua pelo seu service ID
+          process.env.EMAILJS_TEMPLATE_ID!,   // Substitua pelo seu template ID
           form.current,
-          'your_user_id'        // Substitua pelo seu user ID
+          process.env.EMAILJS_USER_KEY!        // Substitua pelo seu user ID
         )
         .then(
           (result) => {

@@ -17,12 +17,12 @@ export default function Home() {
     <main className='overflow-x-hidden'>
       <MainBanner/>
       <SubBanner/>
-      <Promotion/>
+      {/* <Promotion/> */}
       <About/>
       <Services/>
       <Infos/>
       <Testimonials/>
-      {/* <Contact/> */}
+      <Contact/>
       <FloatButton/>
     </main>
     <Footer/>
