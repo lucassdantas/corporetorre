@@ -16,6 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Corporetorre",
   description: "Clínica de fisioterapia",
+  keywords:'Fisioterapia, Quiropraxia, Quiropraxia RJ, Quiropraxia norte shopping, fisioterapia norte shopping, fisioterapeuta rj, fisioterapeuta cachambi, quiropraxia cachambi, rpg cachambi, agulhas cachambi'
 };
 
 export default function RootLayout({
