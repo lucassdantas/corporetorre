@@ -36,7 +36,7 @@ export const Infos = () => {
       <div className="flex lg:flex-row flex-col items-center text-white py-12 lg:gap-0 gap-8" ref={sectionRef}>
         <div className='w-full lg:w-1/3 flex flex-col text-center items-center justify-center'>
           <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={52000} duration={3} separator="." />}</span>
-          <span className='text-lg'>pacientes atendidos</span>
+          <span className='text-lg'>Pacientes atendidos</span>
         </div>
         <div className='w-full lg:w-1/3 flex flex-col text-center items-center justify-center'>
           <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={15} duration={4} />}</span>
@@ -44,7 +44,7 @@ export const Infos = () => {
         </div>
         <div className='w-full lg:w-1/3 flex flex-col text-center items-center justify-center'>
           <span className='font-bold text-4xl'>+ {isVisible && <CountUp end={15} duration={5} />}</span>
-          <span className='text-lg'>especialistas</span>
+          <span className='text-lg'>Profissionais qualificados e especializado</span>
         </div>
       </div>
     </Section>
