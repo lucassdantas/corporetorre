@@ -60,6 +60,16 @@ export default function Page() {
               Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.
             </p>
           </div>
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-2">Uso do Google Tag Manager</h2>
+            <p>
+              Utilizamos o Google Tag Manager para gerenciar e implantar tags no nosso site de forma mais eficiente. O Google Tag Manager não coleta diretamente informações pessoais, mas permite o disparo de outras tags que podem coletar informações. 
+              <br />
+              Essas outras tags podem coletar dados como seu comportamento de navegação, endereço de IP, localização, e outras informações que podem ser usadas para análises e para melhorar sua experiência no site. Ao navegar no nosso site, você consente com o uso dessas tecnologias.
+              <br />
+              Para mais detalhes sobre como o Google lida com seus dados, você pode acessar a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Política de Privacidade do Google</a>.
+            </p>
+          </div>
           <div>
             <h2 className="text-2xl font-semibold mb-2">Aceitação das Práticas</h2>
             <p>
