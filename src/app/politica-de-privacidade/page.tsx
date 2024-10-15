@@ -2,6 +2,7 @@ import { FloatButton } from '@/components/FloatButton';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Section } from '@/components/Section';
+import { GoogleTagManager } from '@next/third-parties/google';
 import Head from 'next/head';
 import React from 'react';
 
@@ -12,6 +13,8 @@ export default function Page() {
         <title>Política de Privacidade - Corpore</title>
         <meta name="description" content="Leia a política de privacidade do Corpore e saiba como tratamos suas informações pessoais." />
       </Head>
+      <GoogleTagManager gtmId="GTM-NMMR2W6T" />
+
       <Header />
       <main>
         <div className='bg-dark-blue-corpore text-white h-[200px] flex flex-col justify-center items-center px-4'>
