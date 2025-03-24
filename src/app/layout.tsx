@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {Carlito} from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { CookieBar } from "@/components/CookieBar";
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <GoogleAnalytics gaId="AW-736990699" />
       <GoogleTagManager gtmId="GTM-NMMR2W6T" />
       <body className={`${carlito.className} antialiased`}>
         {children}
