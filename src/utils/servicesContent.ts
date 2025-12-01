@@ -6,10 +6,17 @@ import acupunctureImg from '@/assets/servicesMedia/acupuntura.jpg'
 import posturologyAvaliationImg from '@/assets/servicesMedia/avaliacao-postural.jpg'
 import manualTherapy from '@/assets/servicesMedia/fisioterapia-manual.jpg'
 import insolesImg from '@/assets/servicesMedia/confeccao-de-palmilhas.jpg'
+import pilatesImg from '@/assets/servicesMedia/pilates-corpore.jpg'
+
 const baropodometryVideoUrl:string = '/videos/Baropodometria.mp4'
 const phisiotherapyVideoUrl:string = '/videos/procedimento-fisioterapeutico-corporetorre.mp4'
 const chiropraticVideoUrl:string = '/videos/servico-quiropraxia-corporetorre.mp4'
 export const servicesContent:ServiceType[]= [
+  {
+      media:pilatesImg,
+      name:'Pilates',
+      description:'EM BREVE',
+  },
   {
       media:rpgImg,
       name:'RPG',
