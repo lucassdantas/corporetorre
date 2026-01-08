@@ -4,8 +4,7 @@ import { SuperTitle } from '@/components/SuperTitle'
 import { Button } from '@/components/common/Button'
 import Image from 'next/image'
 import pilatesImg from '@/assets/placeholder.png'
-
-const WHATSAPP_LINK = 'https://wa.me/5521982687398'
+import { pilatesWpp } from '@/utils/informations/contact-info'
 
 export default function page (){
   const currentYear = new Date().getFullYear()
@@ -30,9 +29,7 @@ export default function page (){
             completo e recém-inaugurado na Torre do Norte Shopping.
           </p>
 
-          <a href={WHATSAPP_LINK} target="_blank">
-            <Button  content={'QUERO AGENDAR UMA AULA EXPERIMENTAL'} className="px-8 py-4 text-lg"/>
-          </a>
+          <Button  content={'QUERO AGENDAR UMA AULA EXPERIMENTAL'} className="px-8 py-4 text-lg"  url={pilatesWpp.url}/>
         </div>
       </Section>
 
@@ -151,9 +148,7 @@ export default function page (){
             Garanta o seu espaço na Corpore Pilates.
           </p>
 
-          <a href={WHATSAPP_LINK} target="_blank">
-            <Button content='AGENDAR MEU HORÁRIO NO WHATSAPP' className="px-8 py-4 text-lg"/>
-          </a>
+          <Button content='AGENDAR MEU HORÁRIO NO WHATSAPP' className="px-8 py-4 text-lg" url={pilatesWpp.url}/>
         </div>
       </Section>
 

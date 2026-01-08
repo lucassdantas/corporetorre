@@ -27,6 +27,11 @@ export const whatsApp:ContactInfo = {
   url:'https://api.whatsapp.com/send/?phone=5521981897315&text&type=phone_number&app_absent=0'
 }
 
+export const pilatesWpp:ContactInfo = {
+  info:'(21) 98268-7398',
+  url:'https://wa.me/5521982687398'
+}
+
 
 export const socialMedia:ContactInfoMap = {
     facebook:{
