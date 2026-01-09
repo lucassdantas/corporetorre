@@ -35,7 +35,7 @@ export default function page (){
 
       {/* SOBRE */}
       <Section className=''>
-        <div className="grid lg:grid-cols-2 gap-12 items-center py-24 text-center lg:text-left">
+        <div className=" gap-12 items-center py-24 text-center ">
           <div>
             <SuperTitle>Uma nova experiência</SuperTitle>
             <Title>O mesmo padrão de qualidade</Title>
