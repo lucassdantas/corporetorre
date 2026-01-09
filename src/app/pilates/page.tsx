@@ -57,11 +57,11 @@ export default function page (){
             </p>
           </div>
 
-          <Image
+          {/* <Image
             src={pilatesImg}
             alt="Estúdio Corpore Pilates"
             className="rounded-xl object-fit max-w-[350px] mx-auto lg:mx-0"
-          />
+          /> */}
         </div>
       </Section>
 
