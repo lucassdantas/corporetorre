@@ -3,7 +3,7 @@ import { Title } from '@/components/Title'
 import { SuperTitle } from '@/components/SuperTitle'
 import { Button } from '@/components/common/Button'
 import Image from 'next/image'
-import pilatesImg from '@/assets/placeholder.png'
+import pilatesImg from '@/assets/pilates/pilates-corporetorre-norte-shopping.jpg'
 import { pilatesWpp } from '@/utils/informations/contact-info'
 
 export default function page (){
@@ -35,7 +35,7 @@ export default function page (){
 
       {/* SOBRE */}
       <Section className=''>
-        <div className=" gap-12 items-center py-24 text-center ">
+        <div className="flex lg:flex-row flex-col gap-12 items-center py-24 lg:text-left text-center ">
           <div>
             <SuperTitle>Uma nova experiência</SuperTitle>
             <Title>O mesmo padrão de qualidade</Title>
@@ -57,11 +57,11 @@ export default function page (){
             </p>
           </div>
 
-          {/* <Image
+           <Image
             src={pilatesImg}
             alt="Estúdio Corpore Pilates"
-            className="rounded-xl object-fit max-w-[350px] mx-auto lg:mx-0"
-          /> */}
+            className="rounded-xl object-fit object-cover max-w-[500px] w-full max-h-[500px] mx-auto lg:mx-0"
+          /> 
         </div>
       </Section>
 
