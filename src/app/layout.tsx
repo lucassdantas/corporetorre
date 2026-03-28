@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {Carlito} from "next/font/google";
-import "./globals.css";
+import "./globals.css"; //teste
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { CookieBar } from "@/components/CookieBar";
 
